@@ -1,0 +1,491 @@
+
+ 
+CONTENTS
+
+•	Abstract
+•	Chapter 1
+
+1.1	Introduction
+
+1.2	Aim
+
+•	Chapter 2
+
+2.1	Methodology
+
+2.2	Algorithm
+
+2.3	Code
+
+•	Chapter 3
+
+3.1 Conclusion
+
+ABSTRACT
+
+TOPIC: ONLINE SHOPPING OF MOBILE PHONE
+
+Online shopping is a form of electronic commerce which allows consumers to directly buy goods or services from a seller over the internet using a web browser or a mobile app. Consumers
+Find a product of interest by visiting the website of the retailer directly or by searching among alternative vendors using a shopping search engine, which displays the same product’s availability and pricing of different retailers. Here we’re talking about the online shopping of mobile phones. Switch statement can be used to develop this program. A table with details including different companies will appear on screen. Table can be created with the help of printf() function. Customer can select the company type according to their preferences. Following the previous step, customer can place an order from the table containing the details about the phone color, price, camera quality, RAM…..etc.
+
+
+
+
+CHAPTER 1
+
+1.1	INTRODUCTION
+
+
+Online shopping is a form of electronic commerce which allows consumers to directly buy goods or services from a seller over the internet using a web browser or a mobile app
+.consumers find a product of their interest by visiting the website of the retailer directly or by searching among alternative vendors using a shopping search engine ,which displays the same products availability and pricing at different e-retailers.
+Online stores usually enable shoppers to use "search" features to find specific models, brands or items. Online customers must have access to the Internet and a valid method of payment in order to complete a transaction, such as a credit card, debit card, or a service such as Google pay. For physical products (e.g., paperback books or clothes), the e-tailer ships the products to   the   customer;   for   digital   products,   such   as   digital   audio files of songs or software, the e-tailer usually sends the file to the customer over the Internet. The largest of these online retailing corporations are Alibaba ,Amazon.com, and eBay.
+Online stores are usually available 24 hours a day, and many consumers in Western countries have Internet access both at work and at home. Other establishments such as Internet cafes, community centers and schools provide internet access as well. In contrast, visiting a conventional retail store requires travel or commuting and costs such as gas, parking, or bus tickets, and must usually take place during business hours. Other advantage of shopping online is being able to quickly seek out deals for items or services provided by many different vendors (though some local search engines do exist to help consumers locate
+products for sale   in   nearby   stores).   Search   engines,   online price   comparison services and discovery shopping engines can be used to look up sellers of a particular product or service. More over online shopping is very helpful during some pandemic situations.
+Anyway online shopping is very beneficial and it was very useful in the way like saving time and effort ,good discounts and low prices, and the convenience of shopping at home. Thus it makes our busy life more easier.
+
+
+
+1.2	AIM
+
+
+1.	Tabular representation of the mobile phone brand names.
+
+2.	Customer can choose the brand name using index number.
+
+3.	Tabular representation of the phone series under the selected brand.
+
+4.	Customer can choose the desired series using index number.
+
+5.	The details of the selected series will appear on the screen.
+
+6.	Customer can order the product by entering their details or go back to the main menu.
+
+7.	Customers will get the Payment Receipt with the product details , customer details and total amount.
+
+
+ 
+CHAPTER 2
+
+
+
+2.2	ALGORITHM
+
+
+Step 1: Star
+
+Step 2:Initialize the variables phone, name ,address ,id ,num ,number ,n.
+
+Step 3: Print “WELCOME TO ONLINE SHOPPING OF MOBILE PHONES”.
+
+Step 4: Print the name of mobile phone companies.
+
+1.	Apple
+
+2.	Samsung
+
+3.	Redmi
+
+Step 5: Select the company name by index number and assign the value to Variable number.
+Step 6: Switch to number, if case 1 go to step 6.1,if case 2 go to step 6.2, if case 3 go to step 6.3, if case 4 go to step 6.4.
+Step 6.1: Print the name of series comes under brand APPLE.
+
+1.	I Phone 12
+
+2.	I Phone 11
+
+3.	I Phone 8
+
+Step 6.1.1: Choose the series by index number and assign the value to Variable num.
+Step 6.1.2: switch to num, if case 1 go to step 6.1.2.1, if case 2 go to step 6.1.2.2, if case 3 go to step 6.1.2.3, if case 4 go to step 6.1.2.4.
+Step 6.1.2.1: Print the details of I Phone 12.
+49
+ 
+Step 6.1.2.2: Print the details of I Phone 11.
+
+Step 6.1.2.3: Print the details of I Phone 8. Step 6.1.2.4: go to step 10.
+Step 6.2: Print the name of series comes under SAMSUNG Brand.
+
+1.	SAMSUNG GALAXY M12
+
+2.	SAMSUNG GALAXY M31
+
+3.	SAMSUNG GALAXY M51
+
+Step 6.2.1: Choose the series by index number and assign the value to Variable num.
+Step 6.2.2: switch to num, if case 1 go to step 6.2.2.1, if case 2 go to step 6.2.2.2, if case 3 go to step 6.2.2.3, if case 4 go to step 6.2.2.4.
+Step 6.2.2.1: Print the details of SAMSUNG GALAXY M12. Step 6.2.2.2: Print the details of SAMSUNG GALAXY M31. Step 6.2.2.3: Print the details of SAMSUNG GALAXY M51. Step 6.2.2.4: go to step 10.
+Step 6.3: Print the name of series comes under REDMI Brand.
+
+1.	REDMI NOTE 8
+
+2.	REDMI NOTE 9
+
+3.	REDMI NOTE 10
+
+Step 6.3.1: Select the series by index number and assign it to the variable num. Step 6.3.2: switch to num, if case 1 go to step 6.3.2.1, if case 2 go to step
+6.3.2.2, if case 3 go to step 6.3.2.3, if case 4 go to step 6.3.2.4.
+
+Step 6.3.2.1: Print the details of REDMI NOTE 8. Step 6.3.2.2: Print the details of REDMI NOTE 9.
+50
+ 
+Step 6.3.2.3: Print the details of REDMI NOTE 10. Step 6.3.2.4:  go to step 10.
+Step 6.4: Print default statement and go to step 10.
+
+Step 7: print enter 0 to placing order , 1 to return to the main menu and 2 to Exit and assign the value to variable n.
+Step 7.1: Switch to n, if case 0 go to step 8, if case1 go to step 5, if case 2 go to Step 10, else go to step 11.
+Step 8: enter your name ,address, phone number and email id and assign to The variables name , address, phone and id.
+Step 8.1: If number==1 && num==1
+
+Print customer details , product details and total amount of APPLE I PHONE 12.
+Step 8.2: If number==1 && num==2
+
+Print customer details ,product details and total amount of APPLE I PHONE 11.
+Step 8.3: If number==1 && num==3
+
+Print customer details , product details and total amount of APPLE I PHONE 8.
+Step 8.4: If number==2 &&num==1
+
+Print customer details ,product details and total amount of SAMSUNG GALAXY M 12.
+Step 8.5: If number==2 && num==2
+
+Print customer details , product details and total amount of SAMSUNG GALAXY M 31.
+51
+ 
+Step 8.6: If number==2 && num==3
+
+Print customer details , product details and total amount of SAMSUNG GALAXY M 51.
+Step 8.7: If number==3 && num==1
+
+Print customer details , product details and total amount of REDMI NOTE 8.
+Step 8.8: If number==3 && num==2
+
+Print customer details , product details and total amount of REDMI NOTE 9.
+Step 8.9: If number=3 && num==3
+
+Print customer details , product details and total amount of REDMI NOTE 10.
+Step 8.10: Print invalid input. Step 9: Print cash on delivery.
+Your order has been placed. Thank you for using our service.
+Step 10: Print THANKYOU. Step 11: Print default statement. Step 12: Stop.
+
+ 
+
+2.3	CODE
+
+
+#include<stdio.h> #include<conio.h> struct data
+{
+
+char phone[100]; char name[100]; char address[200]; char id[46];
+}a;
+
+void main()
+
+{
+
+int num,number,n; clrscr();
+printf("\t\t WELCOME TO ONLINE SHOPPING OF MOBILE PHONES\n");
+
+there:
+
+printf("	\n");
+
+printf("| COMPANY NAME	|\n"); printf("	\n");
+printf("|	1.APPLE	|\n"); printf("|	2.SAMSUNG	|\n");
+
+53
+ 
+printf("|	3.REDMI		|\n"); printf("		\n");
+printf("select the company name by index number: "); scanf("%d",&number);
+switch(number)
+
+{
+
+case 1:
+
+printf("							\n"); printf("|		APPLE		|\n"); printf("							\n"); printf("|	NAME	| RAM	| PRICE |\n"); printf("						|\n");
+printf("|1.IPHONE 12 | 4GB		| 79649 |\n"); printf("			|\n"); printf("|2.IPHONE 11 | 4GB		| 59900 |\n"); printf("			|\n"); printf("|3.IPHONE 8 | 3GB	| 42467 |\n"); printf("			|\n"); printf("choose the product by index number: \n"); scanf("%d",&num);
+switch(num)
+
+{
+
+case 1:
+printf("IPHONE 12\nRAM:4GB\nROM:64GB\nCOLOUR:BLACK\nCAMERA:DUAL12 MP,12 MP DEPTH FRONT CAMERA\nDISPLAY:6.1INCH,SUPER RETINA XDR DISPLAY\nBATTERY:2815MAH,WATER AND DUST RESISTANT,IOS PROCESSOR,QI WIRELESS CHARGER\nPRICE:79649\n");
+break; case 2:
+printf("IPHONE 11\nRAM:4GB\n ROM:128GB\n COLOUR:BLUE\n CAMERA:DUAL CAMERA WITH 12MP ULTRA WIDE CAMERA ,NIGHT MODE\n DISPLAY:6.1INCH\n 3110MAH BATTERY,WATER AND DUST RESISTANT,QIWIRELESS CHARGER\n PRICE:59900\n");
+break; case 3:
+printf("IPHONE 8\nRAM:3 GB\nROM:64GB\nCOLOUR:GOLD\nCAMERA:7MP FRONT CAMERA,12MP CAMERA WITH AUTO HDR\nDISPLAY:4.7Inch\nBATTERY:2691,WATER AND DUST RESISTANT,IOS OPPERATOR\nPRICE:42467");
+break; default:
+printf("default number"); goto that;
+}break; case 2:
+printf("			\n"); printf("|	SAMSUNG	|\n");
+printf("			\n"); printf("|	NAME	| RAM | PRICE |\n"); printf("			\n");
+printf("|1.SAMSUNG GALAXY M12 | 6 GB | 13499 |\n");
+printf("	\n"); printf("|2.SAMSUNG GALAXY M31 | 6 GB | 16499 |\n");
+printf("	\n"); printf("|3.SAMSUNG GALAXY M51 | 6 GB | 22999 |\n");
+printf("	\n"); printf("choose the product by index number: "); scanf("%d",&num);
+switch(num)
+
+{
+
+case 1:
+
+printf("SAMSUNG GALAXY M12\nRAM:6GB\nROM:128GB\COLOUR:BLUE\nCAMERA:TRUE 48 MP QUAD CAMERA\nSCREEN SIZE:6.5 INCH\nBATTERY:6000mAh\nPRICE:13499\n");
+break; case 2:
+printf("SAMSUNG GALAXY M31\nRAM:6GB\nROM:128GB\nCOLOUR:OCEAN BLUE\nCAMERA:5mp DEPTH,64mp QUAD CAMERA\nDISPLAY:6.4 INCH\nBATTERY:6000mAh\nPRICE:16499\n");
+break; case 3:
+printf("SAMSUNG GALAXY M51\nRAM:6GB\nROM:128GB\nCOLOUR:BLACK\nCAMERA:64MP MAIN CAMERA\nDISPLAY:6.7INCH\nBATTERY:7000mAh\nPRICE:22999\n");
+break; default:
+printf("default statement"); goto that;
+}
+break; case 3:
+printf("					\n"); printf("|		3.REDMI	|\n"); printf("					\n"); printf("|	NAME	| RAM | PRICE |\n"); printf("					\n");
+printf("|1.REDMI NOTE 8 | 4GB | 11000 |\n"); printf("	\n"); printf("|2.REDMI NOTE 9 | 6GB | 14666 |\n"); printf("	\n"); printf("|3.REDMI NOTE 10 | 8GB | 16999 |\n"); printf("	\n"); printf("choose the product by index number: "); scanf("%d",&num);
+switch(num)
+{
+case 1:
+printf("REDMI NOTE 8\nRAM:4GB\nROM:64GB\nCOLOUR:BLUE\nCAMERA:48MP MAIN CAMERA\nDISPLAY:6.2INCH\nBATTERY:5000mAh\nPRICE:11000\n");
+break; case 2:
+printf("REDMI NOTE 9\nRAM:6GB\nROM:64GB\nCOLOUR:BLACK\nCAMERA:64MP MAIN CAMERA\nDISPLAY:6.5INCH\nBATTERY:6000mAh\nPRICE:14666\n");
+break; case 3:
+printf("R6EDMI NOTE 10\nRAM:8GB\nROM:128GB\nCOLOUR:SILVER\nCAMERA:64 MP ULTRA HIGH RESOLUTION CAMERA\nDISPLAY:6.7 INCH\nBATTERY:7000mAh\nPRICE:16999\n");
+break; default:
+printf("default statement"); goto that;
+}break; default:
+printf("default statement"); goto that;
+}
+
+printf("\nenter 0 to placing order,enter 1 for return to the main menu,enter 2 to exit\n"); scanf("%d",&n);
+
+switch(n)
+{
+case 1:
+
+goto there; case 0:
+printf("enter your name:\n "); scanf("%s",&a.name);
+printf("\n enter your address:\n "); scanf("%s",&a.address);
+printf("\n enter phone number :\n "); scanf("%s",&a.phone); printf("\nenter email id:\n "); scanf("%s",&a.id); if(number==1&&num==1)
+{
+
+printf("			\n"); printf("|	BILL	|\n"); printf("|			|\n");
+printf("|	COUSTOMER DETAILS					|\n"); printf("| NAME:		|%s	|\n",a.name); printf("| ADDRESS:			|%s		|\n",a.address); printf("| PHONE NO:				|%s			|\n",a.phone); printf("| EMAIL ID:		|%s			|\n",a.id); printf("|		PRODUCT DETAILS				|\n");
+ 
+printf("| BRAND NAME:				|APPLE			|\n"); printf("| SERIES:		|IPHONE 12		|\n"); printf("| PRICE:	|79649	|\n"); printf("| WARRANTEE:			|2 YEAR			|\n"); printf("						\n");
+printf("| TOTAL AMOUNT(PRICE+	| 79749	|\n");
+
+printf("| DELIVERY CHARGE)	|		|\n"); printf("		\n");
+}
+
+else if(number==1&&num==2)
+
+{
+
+printf("			\n"); printf("|	BILL	|\n"); printf("|			|\n");
+printf("|	COUSTOMER DETAILS						|\n"); printf("| NAME:		|%s	|\n",a.name); printf("| ADDRESS:			|%s		|\n",a.address); printf("| PHONE NO:				|%s			|\n",a.phone); printf("| EMAIL ID:		|%s				|\n",a.id); printf("|		PRODUCT DETAILS					|\n");
+printf("| BRAND NAME:				|APPLE			|\n"); printf("| SERIES:		|IPHONE 11		|\n"); printf("| PRICE:	|59900	|\n"); printf("| WARRANTEE:			|2 YEAR			|\n");
+
+ 
+printf("	\n");
+
+printf("| TOTAL AMOUNT(PRICE+	| 59999	|\n");
+
+printf("| DELIVERY CHARGE)	|		|\n"); printf("		\n");
+}
+
+else if(number==1&&num==3)
+
+{
+
+printf("			\n"); printf("|	BILL	|\n"); printf("|			|\n");
+printf("|	COUSTOMER DETAILS						|\n"); printf("| NAME:			|%s		|\n",a.name); printf("| ADDRESS:				|%s			|\n",a.address); printf("| PHONE NO:					|%s				|\n",a.phone); printf("| EMAIL ID:			|%s			|\n",a.id); printf("|		PRODUCT DETAILS						|\n"); printf("| BRAND NAME:						|APPLE						|\n"); printf("| SERIES:	|IPHONE 8					|\n");
+printf("| PRICE:	|42467	|\n"); printf("| WARRANTEE:		|2 YEAR		|\n"); printf("				\n");
+printf("| TOTAL AMOUNT(PRICE+	|424777	|\n");
+
+printf("| DELIVERY CHARGE)	|		|\n"); printf("		\n");
+
+ 
+}
+
+else if(number==2&&num==1)
+
+{
+
+printf("			\n"); printf("|	BILL	|\n"); printf("|			|\n");
+printf("|	COUSTOMER DETAILS					|\n"); printf("| NAME:				|%s		|\n",a.name); printf("| ADDRESS:					|%s				|\n",a.address); printf("| PHONE NO:						|%s					|\n",a.phone); printf("| EMAIL ID:				|%s				|\n",a.id); printf("|		PRODUCT DETAILS					|\n"); printf("| BRAND NAME:							|SAMSUNG				|\n"); printf("| SERIES:		|GALAXY M12		|\n"); printf("| PRICE:		|13499		|\n");
+printf("| WARRANTEE:	|2 YEAR		|\n"); printf("		\n");
+printf("| TOTAL AMOUNT(PRICE+	|13599	|\n");
+
+printf("| DELIVERY CHARGE)	|		|\n"); printf("		\n");
+}
+
+else if(number==2&&num==2)
+
+{
+
+printf("	\n");
+
+printf("|	BILL	|\n"); printf("|			|\n");
+printf("|	COUSTOMER DETAILS					|\n"); printf("| NAME:				|%s		|\n",a.name); printf("| ADDRESS:					|%s				|\n",a.address); printf("| PHONE NO:						|%s					|\n",a.phone); printf("| EMAIL ID:				|%s				|\n",a.id); printf("|		PRODUCT DETAILS						|\n"); printf("| BRAND NAME:							|SAMSUNG				|\n"); printf("| SERIES:		|GALAXY M31		|\n"); printf("| PRICE:		|16499		|\n");
+printf("| WARRANTEE:	|2 YEAR		|\n"); printf("		\n");
+printf("| TOTAL AMOUNT(PRICE+	|16599	|\n");
+
+printf("| DELIVERY CHARGE)	|		|\n"); printf("		\n");
+}
+
+else if(number==2&&num==3)
+
+{
+
+printf("			\n"); printf("|	BILL	|\n"); printf("|			|\n");
+printf("|	COUSTOMER DETAILS	|\n"); printf("| NAME:	|%s	|\n",a.name);
+ 
+printf("| ADDRESS:				|%s			|\n",a.address); printf("| PHONE NO:					|%s				|\n",a.phone); printf("| EMAIL ID:			|%s			|\n",a.id); printf("|	PRODUCT DETAILS					|\n"); printf("| BRAND NAME:						|SAMSUNG			|\n"); printf("| SERIES:		|GALAXY M51		|\n"); printf("| PRICE:		|22999	|\n");
+printf("| WARRANTEE:	|2 YEAR		|\n"); printf("		\n");
+printf("| TOTAL AMOUNT(PRICE+	|23100	|\n");
+
+printf("| DELIVERY CHARGE)	|		|\n"); printf("		\n");
+
+
+}
+
+else if(number==3&&num==1)
+
+{
+
+printf("			\n"); printf("|	BILL	|\n"); printf("|			|\n");
+printf("|	COUSTOMER DETAILS	|\n");
+
+printf("| NAME:	|%s	|\n",a.name);
+printf("| ADDRESS:	|%s	|\n",a.address);
+printf("| PHONE NO:	|%s	|\n",a.phone);
+printf("| EMAIL ID:	|%s	|\n",a.id);
+
+printf("|	PRODUCT DETAILS		|\n"); printf("| BRAND NAME:		|REDMI			|\n"); printf("| SERIES:	|NOTE 8	|\n");
+printf("| PRICE:	|11000	|\n"); printf("| WARRANTEE:		|2 YEAR		|\n"); printf("				\n");
+printf("| TOTAL AMOUNT(PRICE+	|11100	|\n");
+
+printf("| DELIVERY CHARGE)	|		|\n"); printf("		\n");
+}
+
+else if(number==3&&num==2)
+
+{printf("				\n"); printf("|	BILL	|\n"); printf("|			|\n");
+printf("|	COUSTOMER DETAILS					|\n"); printf("| NAME:			|%s		|\n",a.name); printf("| ADDRESS:				|%s			|\n",a.address); printf("| PHONE NO:					|%s				|\n",a.phone); printf("| EMAIL ID:			|%s			|\n",a.id); printf("|		PRODUCT DETAILS					|\n"); printf("| BRAND NAME:						|REDMI					|\n"); printf("| SERIES:	|NOTE 9				|\n");
+printf("| PRICE:	|14666	|\n"); printf("| WARRANTEE:		|2 YEAR	|\n");
+
+printf("	\n");
+
+printf("| TOTAL AMOUNT(PRICE+	|14766	|\n");
+
+printf("| DELIVERY CHARGE)	|		|\n"); printf("		\n");
+
+
+}
+
+else if(number==3&&num==3)
+
+{
+
+printf("			\n"); printf("|	BILL	|\n"); printf("|			|\n");
+printf("|	COUSTOMER DETAILS						|\n"); printf("| NAME:			|%s		|\n",a.name); printf("| ADDRESS:				|%s			|\n",a.address); printf("| PHONE NO:					|%s				|\n",a.phone); printf("| EMAIL ID:			|%s			|\n",a.id); printf("|		PRODUCT DETAILS						|\n"); printf("| BRAND NAME:						|REDMI						|\n"); printf("| SERIES:	|NOTE 10					|\n");
+printf("| PRICE:	|16999	|\n"); printf("| WARRANTEE:		|2 YEAR		|\n"); printf("				\n");
+printf("| TOTAL AMOUNT(PRICE+	|17100	|\n");
+
+printf("| DELIVERY CHARGE)	|	|\n");
+printf("	\n");
+
+}
+
+else
+
+{
+
+printf("invalid input");
+
+}
+
+printf("\ncash on delivery");
+
+printf("\n your oder has been placed"); printf("\nTHANKYOU FOR USING OUR SERVICE");
+break; case 2:
+that: printf("\nthankyou"); break;
+default:
+
+printf("default statement"); break;
+}
+
+getch();
+
+}
+
+ 
+ 
+CHAPTER 3
+
+3.1 CONCLUSION
+
+
+Online stores do not have space constraints and a wide variety of products can be displayed on websites. It helps the analytical buyers to purchase a product after a good search. Customers can purchase items from the comfort of their own homes or workplace. Shopping is made easier and convenient for the customer through the internet. It is also easy to cancel the transactions.
+Generally, in physical stores, the sales representatives try to influence the buyers to buy the product. While in online shopping, you're free to do as you will. Customers do not have to stand in queues in cash counters to pay for the products that have been purchased by them. They can shop from their home or workplace and do not have to spend time travelling. There is a wide range of products online. The sellers display all the stuff they've got. This enables the buyers to choose from a variety of models after comparing the finish, features, and price of the products on display. The mall is open on 365 x 24 x 7. So, time does not act as a barrier, wherever the vendor and buyers are.
+Main advantages of online shopping:
+
+●	Saves time and efforts.
+
+●	The convenience of shopping at home.
+
+●	Wide variety/range of products are available.
+
+●	Get detailed information about the product.
+
+●	We can compare various models/brands.
+
+●	You get an electronic record of the receipt of your purchase, which makes record-keeping much easier.
+●	You get to try things on in the comfort of your own home.
+
+●	Sometimes, returns are easy.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
