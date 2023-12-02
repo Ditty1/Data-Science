@@ -1,0 +1,781 @@
+DATA ANALYSIS PROJECT USING EXCEL
+ 
+CONTENTS
+
+•	Abstract
+•	Chapter 1
+1.1	Introduction
+1.2	Aims
+1.3	Data Description
+
+•	Chapter 2
+
+2.1	Data Preprocessing
+2.2	Methodology
+2.3	Software Specification
+2.4	Data Analysis Result
+
+•	Chapter 3
+
+3.1 Conclusion
+ 
+ABSTRACT
+
+TOPIC: POPULATION
+
+
+In this excel project, we are evaluating the dataset of countries population from 1955 to 2020. It is taken from the KAGGLE website. The dataset contains 2503 rows and 10 columns where two of them are categorical and the rest are discrete data. A total of 139 countries information is included in this dataset. Information based on year, country, population, yearly % change, migrants, median age, fertility rate, density, country share of world population and country global rank.
+In this project, we pursue a deep analysis of population and factors effecting it using excel functions like MAX (), MIN (), CORREL (), FORCAST (), pivot table, conditional formatting and different charts. From the given information we can find which country has highest and lowest population and country with highest and lowest migrants and fertility rate. By using pivot table we can analyze the difference in population and global ranking between countries. And we can find and plot the correlation between migrants and density using line chart or bar chart. Above all our main purpose is to predict the population growth of the countries in the upcoming years.
+This analysis is useful for population study and regulating population in highly populated countries based on migrant rate and fertility rate.
+ 
+CHAPTER 1
+
+1.1	INTRODUCTION
+
+A population is a distinct group of individuals whether that group comprises a nation or a group of people with a common characteristic. In statistics, a population is the pool of individuals  from which a statistical sample is drawn for a study. Thus, any
+selection of individuals grouped together by a common feature can be said to be a population. Only an analysis of an entire population would have no standard error. It includes all the elements from the dataset and measurable characteristics of the population such as mean and standard deviation.
+The population is one of the important factors which help to balance the environment; the population should in a balance with the means and resources. If the population will be balanced, then all the needs and demand of the people can be easily fulfilled, which helps to preserve the environment of the country.
+Population studies help us to know how far the growth rate of the economy is keeping pace with the growth rate of population.
+
+
+1.2	AIMS
+
+•	Highlight Highest and Lowest Population
+
+•	Highest and Lowest Population in 2020
+
+•	Ranking of the Countries
+
+•	Correlation between Migrants and Density
+
+•	Correlation between Fertility Rate and Yearly Percentage Change
+
+•	Total Population from 1955 to 2020
+
+•	Predict Future Population Growth
+
+•	Predict Population Growth of India
+
+•	Predict Population Growth of China
+
+•	Predict Population Growth of Qatar
+
+•	Highest and Lowest Migrant Rate
+
+•	Highest and Lowest Fertility Rate
+
+ 
+1.3	DATA DESCRIPTION
+
+In this excel project we are evaluating the dataset of countries population from 1955 to 2020. It is taken from the KAGGLE website. The dataset contains 2503 rows and 10 columns where two of them are categorical and the rest are discrete data .A total of 139 countries information is included in this dataset. There are 10 attributes it includes the Information based on year, country, population, yearly % change, migrants, median age, fertility rate, density, country share of world population and country global rank. In this year, country are categorical data and population, yearly % change, migrants, median age, fertility rate, density, country share of world population and country global rank are discrete data.
+1.	YEAR:
+
+This column indicates the year from 1955 to 2020 for each country.
+
+2.	COUNTRY:
+
+This column contains the name of 139 countries.
+
+3.	POPULATION:
+
+This column indicates the population of each country in every year.
+
+4.	YEARLY % CHANGE:
+
+This column indicates the yearly population change in every country in percentage.
+
+5.	MIGRANTS:
+
+This column indicates the rate of migrants in each country in every year.
+ 
+6.	MEDIAN AGE:
+
+This column indicates the most common age in each country at respective years.
+
+7.	FERTILITY RATE:
+
+This column indicates the fertility rate in each country in percentage.
+
+8.	DENSITY:
+
+This column indicates the measurement of population per unit area.
+
+9.	COUNTRY SHARE OF WORLD POPULATION %:
+
+This column indicates how much each country’s population share in total world population is.
+10.	COUNTRY GLOBAL RANK:
+
+This column indicates global rank of each country’s respect to their population.
+
+
+CHAPTER 2
+
+
+2.1	DATA PREPROCESSSING
+
+Countries population from 1955 to 2020 is a good data set in the KAGGLE website without any missing values or errors. So there was no need of preprocessing. It was perfect for our data analysis project.
+Unnecessary attributes median age and countries share of world population are not included in the analysis.
+
+
+2.2	METHDOLOGY
+
+In this project, we pursue a deep analysis of population and factors effecting it using the excel functions like,
+•	MIN()
+
+•	MAX()
+
+•	PIVOT TABLE
+
+•	CONDITIONAL FORMATTING
+
+•	CORREL()
+
+•	FORECAST()
+
+•	LINE CHART
+
+•	BAR CHART
+
+1.	Highlight Highest And Lowest Population
+
+To make worksheet easier to understand and to visualize data Conditional Formatting is used. Conditional formatting is a feature in many spreadsheet applications that allows you to apply formats such as colors, icons, and data bars to a cell or range of
+cells, and have that formatting change depending on the value of the cell or the value of a formula.
+
+Formula:
+
+•	Home Conditional Formatting new rule Click on “use a formula to determine which cells to format” type the formula of the active data cell Click format button choose fill color Click OK
+This aim is applied on the population column of the dataset. For that we have to find the highest and lowest population using the maximum () and minimum () functions.
+Formula:
+
+•	Select population column conditional formatting new rule format only cell that contain format only cell with equal to select the max/min value column
+format button choose fill color OK
+
+2.	Highest And Lowest Population In 2020
+
+This aim is done by using Sort and Filter option in Excel. The Filter tool
+
+gives you the ability to filter a column of data within a table to isolate the key components you need. The Sorting tool allows you to sort by date, number, and alphabetic order of a range or array. Values can be sorted by one or more column. It can be done in ascending or descending order.
+Formula:
+
+•	Home Sort and Filter Select Filter optionmake changes if want
+
+This functionality is done on the whole dataset. After sorting, we will get the data only in year-2020.
+Formula:
+
+•	Select the whole dataset Home Sort and Filter Select Filter option Select the year 2020 Enter OK
+
+After sorting the data, find the countries with highest and lowest population using maximum () and minimum () function. By conditional formatting, highlight those countries.
+Formula
+•	Select population column conditional formatting new rule format only cell that contain select format only cell with equal to select the max/min value column format button choose fill color Click OK
+
+3.	Ranking Of The Countries
+
+
+To summarize, sort, reorganize, group, count data pivot table is used. A pivot table is a table of grouped values that aggregates the individual items of a more extensive table within one or more discrete categories. This summary might include
+sums, average, or other statistics, which the pivot table groups together using a chosen
+
+aggregation function applied to the grouped values. It allows us to transform columns into rows and rows into columns. Grouping of any field (column), and advanced calculations can also be done.
+Formula:
+
+•	Select the dataset Insert pivot table Under “Choose the data that you want to analyze” click “Select a table/range” In Table/Range verify the cell range 
+Under “Choose where you want the pivot table report to be placed” select New worksheet/Existing worksheet select the location you want the pivot table to appear Click OK
+ 
+This aim is applied on year, country, population, country global rank column of the dataset. By filtering the data using filter option in the pivot table, we can select a particular country. Hence it helps to know the global ranking of countries in each year separately.
+Formula:
+
+•	Select the whole dataset insert pivot table Select/Drag required columns 
+
+select country name Click OK
+
+To organize and represent the given data pictorial pivot chart is used.
+
+Pivot chart: Pivot charts in excel is an in-built program tool in excel which helps to summarize selected rows and columns of data. They are like regular charts, except they display data from a PivotTable. Pivot Charts is an interactive graphical representation of the data.
+Column chart are used to compare values across categories.
+
+Formula:
+
+•	Select any cell in your PivotTable Insert Column Chart Select any design
+
+4.	Correlation Between Migrants And Density
+
+This aim is done by using CORREL () function available in excel worksheet. The CORREL function returns the correlation coefficient of two cell ranges. Correlation is a statistical measure that expresses the extent to which two variables are linearly related. We can use the correlation coefficient to determine the relationship between two properties. The whole purpose of using correlations in research is to figure out which variables are connected. Pictorial representation of the acquired data can be shown using charts.
+Formula:
+
+•	=CORREL(array1,array2)
+
+This functionality is applied on the Migrants and Density column of the dataset. If the result of the relation is,
+i.	1 or more Positive Correlation
+
+ii.	0	No Correlation
+
+iii.	-1 or less	Negative Correlation
+
+Formula:
+
+•	=CORREL(select migrant column, select density column) Enter
+
+Line Charts: Line charts are used to display information that change over time. It is a graph that shows a series of data points connected by straight lines. Changes over short and long period of time can be tracked.
+Formula:
+
+•	Insert Line chart Select any design
+
+ 
+5.	Correlation	Between	Fertility	Rate	And	Yearly Percentage Change
+
+To figure out the relation between these variables CORREL () function is
+
+used. Correlation is a statistical measure that expresses the extent to which two variables are linearly related. The CORREL function returns the correlation coefficient of two cell ranges. We can use the correlation coefficient to determine the relationship between two properties.
+Formula:
+
+•	=CORREL(array1, array2)
+
+
+This functionality is applied on the Fertility Rate and Yearly Percentage Change column in the dataset. If the result of the relation is,
+i.	1 or more Positive Correlation
+
+ii.	0	No Correlation
+
+iii.	-1 or less	Negative Correlation
+
+Formula:
+
+•	=CORREL(Select Fertility Rate column, Select Yearly Percentage Change column) Enter
+The result acquired is plotted in a line chart. It shows the relation between Fertility Rate and Yearly Percentage Change.
+ 
+Formula:
+
+•	Insert Line chart Select any design
+
+Line Charts: Line charts are used to display information that change over time. It is a graph that shows a series of data points connected by straight lines. Changes over short and long period of time can be tracked.
+
+
+6.	Predict Future Population Growth
+
+This aim is done by using pivot table, forecast () and line chart.
+
+Pivot table: A pivot table is a table of grouped values that aggregates the individual items of a more extensive table within one or more discrete categories. This summary might include sums, averages, or other statistics, which the pivot table groups together using a chosen aggregation function applied to the grouped values.
+Formula:
+
+•	Select cells →Insert → pivot table →select table range →click existing worksheet→ choose location →ok
+FORCAST (): The Excel FORECAST function predicts a value based on existing values along a linear trend. FORECAST calculates future value predictions using linear regression, and can be used to predict numeric values like sales, inventory, expenses, measurements, etc.
+Formula:
+
+•	FORECAST( X , KNOWN_Y’S , KNOWN_X’S)
+
+Where,
+
+a.	X (required) - a numerical x-value for which you want to predict a new y-value.
+
+b.	Known_y's (required) - an array of known dependent y-values.
+
+c.	Known_x's (required) - an array of known independent x-values.
+
+
+
+Line Chart: A line graph (also called a line chart or run chart) is a simple but powerful tool and is         generally used to show changes over time. Line graphs can include a single line for one data set, or multiple lines to compare two or more sets of data.
+
+Formula:
+
+•	Insert →line→ select chart→ design→ select data→ select chart data range→ ok
+
+
+This aim is applied on year and population column of the dataset. In this aim total population of each year is calculated using pivot table and predicted the future population in next 60 years using forecast and plotted it using line chart. It helps us to know about the population growth in upcoming years.
+•	The column year indicates the year from 1955 to 2020 for each country.
+
+•	The column population indicates the population of each country in every year.
+
+Formula:
+
+1.	Pivot table is used to find the total population in each year.
+
+Select the whole dataset →Insert → pivot table →select whole dataset as table range
+
+→click existing worksheet→ select new work sheet as location →ok→ drag year to row labels→ drag population to values (sum of population)
+
+2.	Forecast is used to predict the future population
+
+Copy pivot table→ paste →rearrange the dataset with 5 year gap between the years→ enter year from 2025 to 2080→=forecast→ select 2025→ select population column→ select year column from 1955 to 2020→ enter →drag downward.
+3.	Line chart is used to plot population growth
+
+
+Insert →line→ select chart→ design→ select data→ select year and population columns→ ok
+
+7.	Predict Population Growth of India
+
+This aim is done by using pivot table, forecast (), and line chart.
+
+Pivot table: A pivot table is a table of grouped values that aggregates the individual items of a more extensive table within one or more discrete categories. This summary might include sums, averages, or other statistics, which the pivot table groups together using a chosen aggregation function applied to the grouped values.
+Formula:
+
+•	Select cells →Insert → pivot table →select table range →click existing worksheet→ choose location →ok
+FORCAST (): The Excel FORECAST function predicts a value based on existing values along a linear trend. FORECAST calculates future value predictions using linear regression, and can be used to predict numeric values like sales, inventory, expenses, measurements, etc.
+Formula:
+
+•	FORECAST(X , KNOWN_Y’S , KNOWN_X’S)
+
+Where,
+
+a.	X (required) - a numerical x-value for which you want to predict a new y-value.
+
+b.	Known_y's (required) - an array of known dependent y-values.
+
+c.	Known_x's (required) - an array of known independent x-values.
+
+Line Chart: A line graph (also called a line chart or run chart) is a simple but powerful tool and is generally used to show changes over time. Line graphs can include a single line for one data set, or multiple lines to compare two or more sets of data.
+
+Formula:
+
+•	Insert →line→ select chart→ design→ select data→ select chart data range→ ok
+
+This aim is applied on year, country and population column of the dataset. In this aim total population of each year is calculated using pivot table and predicted the future population in next 60 years using forecast and plotted it using line chart. It helps us to know about the population growth in upcoming years in India.
+•	The column year indicates the year from 1955 to 2020 for each country.
+
+•	The column population indicates the population of each country in every year.
+
+•	The column country contains the name of 139 countries.
+
+
+1.	Pivot table is used to find the total population in each year.
+
+Select the whole dataset →Insert → pivot table →select whole dataset as table range
+
+→click existing worksheet→ select new work sheet as location →ok→ drag year to row
+15
+ 
+labels→ drag population to values (sum of population) → drag country to report filter→ select India as country
+2.	Forecast is used to predict the future population.
+
+Copy pivot table→ paste →rearrange the dataset with 5 year gap between the years→ enter year from 2025 to 2080→=forecast→ select 2025→ select population column→ select year column from 1955 to 2020→ enter →drag downward.
+3.	Line chart is used to plot population growth.
+
+Insert →line→ select chart→ design→ select data→ select year and population columns→ ok
+8.	Predict the Population Growth of China
+
+This aim is done by using pivot table, forecast (), and line chart.
+
+Pivot table: A pivot table is a table of grouped values that aggregates the individual items of a more extensive table within one or more discrete categories. This summary might include sums, averages, or other statistics, which the pivot table groups together using a chosen aggregation function applied to the grouped values.
+
+Formula:
+
+•	Select cells →Insert → pivot table →select table range →click existing worksheet→ choose location →ok
+FORECAST (): The Excel FORECAST function predicts a value based on existing values along a linear trend. FORECAST calculates future value predictions using linear regression, and can be used to predict numeric values like sales, inventory, expenses, measurements, etc.
+
+
+Formula:
+
+•	FORECAST(X , KNOWN_Y’S , KNOWN_X’S) Where,
+•	X (required) - a numerical x-value for which you want to predict a new y-value.
+
+•	Known_y's (required) - an array of known dependent y-values.
+
+•	Known_x's (required) - an array of known independent x-values.
+
+Line chart: A line graph (also called a line chart or run chart) is a simple but powerful tool and is generally used to show changes over time. Line graphs can include a single line for one data set, or multiple lines to compare two or more sets of data.
+
+Formula:
+
+•	Insert →line→ select chart→ design→ select data→ select chart data range→ ok
+
+This aim is applied on year, country and population column of the dataset. In this aim total population of each year is calculated using pivot table and predicted the future population in next 60 years using forecast and plotted it using line chart. It helps us to know about the population growth in upcoming years in China.
+•	The column year indicates the year from 1955 to 2020 for each country.
+
+•	The column population indicates the population of each country in every year.
+
+•	The column country contains the name of 139 countries.
+
+
+1.	Pivot table is used to find the total population in each year.
+ 
+Select the whole dataset →Insert → pivot table →select whole dataset as table range
+
+→click existing worksheet→ select new work sheet as location →ok→ drag year to row labels→ drag population to values (sum of population) → drag country to report filter→ select China as country
+2.	Forecast is used to predict the future population
+
+Copy pivot table→ paste →rearrange the dataset with 5 year gap between the years→ enter year from 2025 to 2080→=forecast→ select 2025→ select population column→ select year column from 1955 to 2020→ enter →drag downward.
+3.	Line chart is used to plot population growth
+
+Insert →line→ select chart→ design→ select data→ select year and population columns
+
+→ ok
+
+9. Predict the Population Growth of Qatar
+
+This aim is done by using pivot table, forecast (), and line chart.
+
+Pivot table: A pivot table is a table of grouped values that aggregates the individual items of a more extensive table within one or more discrete categories. This summary might include sums, averages, or other statistics, which the pivot table groups together using a chosen aggregation function applied to the grouped values.
+Formula:
+
+•	Select cells →Insert → pivot table →select table range →click existing worksheet→ choose location →ok
+FORECAST (): The Excel FORECAST function predicts a value based on existing values along a linear trend. FORECAST calculates future value predictions using linear regression, and can be used to predict numeric values like sales, inventory, expenses, measurements, etc.
+Formula:
+
+•	FORECAST(X , KNOWN_Y’S , KNOWN_X’S)
+
+
+Where,
+
+•	X (required) - a numerical x-value for which you want to predict a new y-value.
+
+•	Known_y's (required) - an array of known dependent y-values.
+
+•	Known_x's (required) - an array of known independent x-values.
+
+Line chart: A line graph (also called a line chart or run chart) is a simple but powerful tool and is generally used to show changes over time. Line graphs can include a single line for one data set, or multiple lines to compare two or more sets of data.
+
+Formula:
+
+•	Insert →line→ select chart→ design→ select data→ select chart data range→ ok
+
+This aim is applied on year, country and population column of the dataset. In this aim total population of each year is calculated using pivot table and predicted the future population in next 60 years using forecast and plotted it using line chart. It helps us to know about the population growth in upcoming years in Qatar.
+•	The column year indicates the year from 1955 to 2020 for each country.
+
+•	The column population indicates the population of each country in every year.
+
+•	The column country contains the name of 139 countries.
+
+1.	Pivot table is used to find the total population in each year.
+ 
+Select the whole dataset →Insert → pivot table →select whole dataset as table range →click existing worksheet→ select new work sheet as location →ok→ drag year to row labels→ drag population to values (sum of population) → drag country to report filter→ select Qatar as country
+2.	Forecast is used to predict the future population.
+
+Copy pivot table→ paste →rearrange the dataset with 5 year gap between the years→ enter year from 2025 to 2080→=forecast→ select 2025→ select population column→ select year column from 1955 to 2020→ enter →drag downward.
+
+3.	Line chart is used to plot population growth
+
+Insert →line→ select chart→ design→ select data→ select year and population columns→ Click OK
+10. Highest and Lowest Migrant Rate
+
+This aim is done by using max (), min () and conditional formatting.
+
+MAX (): MAX will return the largest value in a given list of arguments. From a given set of numeric values, it will return the highest value. MAX function will count numbers but ignore empty cells, text, the logical values TRUE and FALSE, and text values.
+Formula:
+
+•	=MAX (number1, [number2], …)
+
+Number1 and number2 are the arguments used for the function, where Number1 is required and the subsequent values are optional.
+
+MIN (): The Excel MIN function returns the smallest numeric value in a range of values. The MIN function ignores empty cells, the logical values TRUE and FALSE, and text values.
+Formula:
+
+•    =MIN (number1, [number2], ...)
+
+Number 1 - Number, reference to numeric value, or range that contains numeric values. Number 2 - [optional] Number, reference to numeric value, or range that contains numeric values.
+Conditional Formatting: Conditional formatting in Excel enables you to highlight cells with a certain color, depending on the cell's value.
+Formula:
+
+•	Select range→ home→ conditional formatting→ new rule→ format only cell that contain→ equal to→ select cell→ format→ fill→ ok
+
+
+This aim is applied on migrant’s column of dataset. In this highest migrant rate is calculated using max () function and lowest migrant rate is calculated using min () function and it plotted on the dataset using conditional formatting.
+•	The column migrants indicate the rate of migrants in each country in every year.
+
+1.	Highest/Lowest migrant rate using
+
+•    =MAX (select migrants column) → Enter
+
+•    =MIN (select migrants column) → Enter
+
+2.	Conditional formatting of highest value
+
+ 
+Select column migrants→ home→ conditional formatting→ new rule→ format only cell that contain→ equal to→ select cell that contain highest value→ format→ fill→ choose red color→ ok→ ok
+3.	Conditional formatting of lowest value
+
+Select column migrants→ home→ conditional formatting→ new rule→ format only cell that contain→ equal to→ select cell that contain lowest value→ format→ fill→ choose blue color→ ok→ ok
+
+11. Highest and Lowest Fertility Rate
+
+This aim is done by using max (), min () and conditional formatting.
+
+MAX (): MAX will return the largest value in a given list of arguments. From a given set of numeric values, it will return the highest value. MAX function will count numbers but ignore empty cells, text, the logical values TRUE and FALSE, and text values.
+Formula:
+
+•	=MAX (number1, [number2], …)
+
+Number1 and number2 are the arguments used for the function, where Number1 is required and the subsequent values are optional.
+
+
+MIN (): The Excel MIN function returns the smallest numeric value in a range of values. The MIN function ignores empty cells, the logical values TRUE and FALSE, and text values.
+Formula:
+
+•	=MIN (number1, [number2], ...)
+
+Number 1 - Number, reference to numeric value, or range that contains numeric values. Number 2 - [optional] Number, reference to numeric value, or range that contains numeric values.
+Conditional Formatting: Conditional formatting in Excel enables you to highlight cells with a certain color, depending on the cell's value.
+Formula:
+
+•	Select range→ home→ conditional formatting→ new rule→ format only cell that contain→ equal to→ select cell→ format→ fill→ ok
+This aim is applied on fertility rate column of dataset. In this highest fertility rate is calculated using max () function and lowest fertility rate is calculated using min () function and it plotted on the dataset using conditional formatting.
+•	The column fertility rate indicates the fertility rate in each country in percentage.
+
+1.	Highest/Lowest fertility rate using max ()
+
+•    =MAX (select Fertility column) → Enter
+
+•    =MIN (select Fertility column) → Enter
+
+
+
+2.	Conditional formatting of highest value
+
+Select column fertility rate→ home→ conditional formatting→ new rule→ format only cell that contain→ equal to→ select cell that contain highest value→ format→ fill→ choose red color→ ok→ ok
+
+3.	Conditional formatting of lowest value
+
+Select column fertility rate→ home→ conditional formatting→ new rule→ format only cell that contain→ equal to→ select cell that contain lowest value→ format→ fill→ choose blue color→ ok
+
+
+ 
+
+2.3	SOFTWARE SPECIFICATION
+
+
+Microsoft Excel is a spreadsheet developed by Microsoft for Windows, macOS, Android and iOS. It features calculation, graphing tools, pivot tables, and a macro programming language called Visual Basic for Applications (VBA). It has been a very widely applied spreadsheet for these platforms, especially since version 5 in 1993, and it has replaced Lotus 1-2-3 as the industry standard for spreadsheets. Excel forms part of the Microsoft Office suite of software. Here we use Excel 2016.Excel 2016 is a version of Excel developed by Microsoft that runs on the Windows platform.
+
+Benefits of Microsoft Excel
+
+•	Best way to store data.
+
+•	You can perform calculations.
+
+•	All the tools for data analysis.
+
+•	Easy to data visualizations with charts.
+
+•	You can print reports easily.
+
+•	So many free templates to use.
+
+•	You can code to automate.
+
+•	Transform and clean data.
+
+•	Store data with millions of rows
+
+•	You can work with Excel online + mobile app
+
+
+25
+ 
+Excel is a powerful tool for building bespoke template-based spreadsheets for use in business, for analysis of data and for presenting data graphically. We have helped many clients use it in their business to great effect, but here are the benefits of Excel according to Microsoft:
+
+•	Excel provides users with the ability to calculate, organize, and evaluate quantitative data, allowing managers and senior staff to have the information they need to make important decisions that can affect the company. By having employees trained in the advanced functions of Excel, they can better present their information all the way up to upper management. It is also a critical skill for employees hoping to climb to the top themselves.
+•		Excel is a vital tool for speeding up productivity and allowing workers to be more efficient when dealing with large amounts of data and calculations. When you understand Excel at a more advanced level, you will have the ability to use its more sophisticated tools, which will allow you to complete your tasks and analyze your data more quickly. It will also allow you to keep team members up-to-date on data, which can streamline the workflow process.
+•	Microsoft Excel is the one destination for all data analysis needs. Be it organizing, manipulating, analyzing or segmenting data, Microsoft Excel is the apt tool.
+•	Microsoft Excel 2016 is one step further. It has a bouquet of features which help improve your efficiency tremendously with all its latest features.
+
+ 
+2.4	DATA ANALYSIS RESULT
+
+
+
+1.	Highlight highest and lowest population
+
+FORMULA:
+
+Step 1: Find maximum and minimum population using,
+
+•	=MAX (select population column)Enter
+
+•	=MIN (select population column)Enter
+
+Step 2: Use Conditional Formatting for highlighting the countries
+
+•	Select population column conditional formatting new rule format only cell that contain format only cell with equal to select the max/min value column  Click format button choose fill color Enter ok
+
+
+
+OUTPUT:
+
+*RED COLOR – HIGHEST VALUE
+
+*BLUE COLOR – LOWEST VALUE
+
+
+2.	Highest and lowest population in 2020
+
+FORMULA:
+
+Step 1: Sort it into data in year 2020 only
+
+•	Select the whole dataset Home Sort and Filter Select Filter option Select the year 2020 Enter ok
+Step 2: Find maximum and minimum population in 2020 using,
+
+•	=max (select population column)Enter
+
+ 
+•	=min (select population column)Enter
+
+Step 3: Use Conditional Formatting for highlighting the Highest and Lowest population countries in 2020
+•	Select population column conditional formatting new rule format only cell that contain select format only cell with equal to select the max/min value column format button choose fill color Click ok
+OUTPUT:
+
+*RED COLOR – HIGHEST VALUE
+
+*BLUE COLOR – LOWEST VALUE
+
+3.	Ranking of the countries
+
+
+FORMULA:
+
+Step 1: Create a Pivot Table
+
+•	Select the whole dataset insert pivot table Select/Drag required columns 
+
+select country name Click ok
+
+Step 2: To plot the result in a Pivot Chart
+
+•	Select any cell in your PivotTable Insert Column Chart Select any design OUTPUT:
+
+
+
+4.	Correlation between Migrants and Density in 2020
+
+FORMULA:
+
+Step 1: CORREL function is used to find the relation between the columns
+
+•	=CORREL(select migrant column, select density column) Enter
+
+Step 2: Represent it in Line Chart
+
+•	Insert Line chart Select any design
+
+
+5.	Correlation	between	Fertility	Rate	and	Yearly Percentage Change in 2020
+FORMULA:
+
+Step 1: CORREL function is used to find the relation between the columns
+
+•	=CORREL(Select Fertility Rate column, Select Yearly	Percentage Change column) Enter
+Step 2: Represent it in Line Chart
+
+•	Insert Line chart Select any design
+
+
+6.	Predict Future Population Growth
+
+FORMULA:
+
+Step 1: Create a Pivot Table
+
+•	Select the whole dataset →Insert → pivot table →select whole dataset as table range
+
+→click existing worksheet→ select new work sheet as location →ok→ drag year to row labels→ drag population to values (sum of population)
+Step 2: Use Forecast function to predict the future population
+
+•	Copy pivot table→ paste →rearrange the dataset with 5 year gap between the years→ enter year from 2025 to 2080→=forecast→ select 2025→ select population column→
+select year column from 1955 to 2020→ enter →drag downward.
+
+ 
+Step 3: Use Line Chart to plot population growth
+
+•	Insert →line→ select chart→ design→ select data→ select year and population columns→ ok
+
+
+7.	Predict population growth of India
+
+FORMULA:
+
+Step 1: Create a PivotTable to find the total population in each year.
+
+•	Select the whole dataset →Insert → pivot table →select whole dataset as table range
+
+→click existing worksheet→ select new work sheet as location →ok→ drag year to
+
+row labels→ drag population to values (sum of population)→ drag country to report filter→ select India as country
+Step 2: Use Forecast function to predict the future population
+
+•	Copy pivot table→ paste →rearrange the dataset with 5 year gap between   the years→ enter year from 2025 to 2080→=forecast→ select 2025→ select population column→ select year column from 1955 to 2020→ enter →drag downward.
+Step 3: Line chart is used to plot population growth
+
+•	Insert → line → select chart→ design → select data → select year and population columns → ok
+
+8.	Predict population growth of China
+
+FORMULA:
+
+Step 1:Create a Pivot table to find the total population in each year.
+
+•	Select the whole dataset →Insert → pivot table →select whole dataset as table range
+
+→click existing worksheet→ select new work sheet as location →ok→ drag year to row labels→ drag population to values (sum of population) → drag country to report filter→ select China as country
+Step 2:Use Forecast to predict the future population
+
+•	Copy pivot table→ paste →rearrange the dataset with 5 year gap between the years→ enter year from 2025 to 2080→=forecast→ select 2025→ select population column→ select year column from 1955 to 2020→ enter →drag downward.
+Step 3: Use Line chart to plot population growth
+
+•	Insert →line→ select chart→ design→ select data→ select year and population columns→ ok
+
+9.	Predict population growth of Qatar
+
+FORMULA:
+
+Step 1: Create a Pivot table to find the total population in each year.
+
+•	Select the whole dataset →Insert → pivot table →select whole dataset as table range →click existing worksheet→ select new work sheet as location →ok→ drag year to row labels→ drag population to values (sum of population)→ drag country to report filter→ select Qatar as country
+Step 2: Apply Forecast to predict the future population
+
+•	Copy pivot table→ paste →rearrange the dataset with 5 year gap between the years→ enter year from 2025 to 2080→=forecast→ select 2025→ select population column→ select year column from 1955 to 2020→ enter →drag downward.
+Step 3: Use Line chart to plot population growth
+
+•	Insert →line→ select chart→ design→ select data→ select year and population columns→ ok
+
+10.	Highest and Lowest Migrant Rate
+
+FORMULA:
+
+Step 1: Find Highest and Lowest Migrant Rate using,
+
+•	=MAX (select migrants column) → Enter
+
+•	=MIN (select migrants column) → Enter
+
+Step 2: Use Conditional Formatting for highlighting the highest and lowest migrant value
+•	Select migrants column conditional formatting new rule format only cell that contain format only cell with equal to select the max/min value column Click format button choose fill color ok
+OUTPUT:
+
+*RED COLOR – HIGHEST VALUE
+
+*BLUE COLOR – LOWEST VALUE
+
+
+
+11.	Highest and Lowest Fertility Rate
+
+
+FORMULA:
+
+Step 1: Find Highest and Lowest Migrant Rate using,
+
+•	=MAX (select Fertility Rate column) → Enter
+
+•	=MIN (select Fertility Rate column) → Enter
+ 
+Step 2: Use Conditional Formatting for highlighting the highest and lowest Fertility Rate value
+•	Select migrants column conditional formatting new rule format only cell that contain format only cell with equal to select the max/min value column Click format button choose fill color ok
+OUTPUT:
+
+*RED COLOR – HIGHEST VALUE
+
+*BLUE COLOR – LOWEST VALUE
+
+
+CHAPTER 3
+
+3.1 CONCLUSION
+
+The purpose of this analysis was to identify the factors affecting or influencing population growth. Based on the analysis, it can be concluded that Migrant Rate and Density are related to each other. If Migrant Rate increases, Density also increases and
+vice versa. Similarly Fertility Rate and Yearly % Change are also inter-related. These factors can make a huge difference in the world’s population. Countries like India, China and Qatar are expected to have a population growth in the upcoming years.
+According to data collected from 1955 to 2020, China has the largest population and Qatar has the lowest. In 2000, the United States was found to have the highest immigration rate. And Syria has the lowest immigration rate in 2015. Yemen had the highest fertility rate from 1985 to 1990, while Hong Kong had the lowest fertility rate in 2005.
+This analysis is useful for population study and population control in high population countries.
+ADVANTAGES:
+
+•	No need for sampling( The entire population is in your dataset)
+
+•	Your findings would be representative of the population(since your analyses are based on the population)
+•	You can make reliable estimates of the population with less effort and money.
+
+•	Less time consuming
